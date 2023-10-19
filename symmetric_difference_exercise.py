@@ -1,24 +1,19 @@
 """
 	Gets the symmetric difference of two sets.
-	Checks if each element in the set is in the intersection,
-	if not, add to the answer list.
+	Subtracts the interection from the set union to get
+	the elements unique for each set.
 """
 def get_symmetric_difference(set1, set2):
 	answer = []
+	# get union of both sets
+	set_union = set1.union(set2)
 	# get interesection of the two sets
 	set_intersection = set1.intersection(set2)
 
-	# check if which elements are not in the intersection,
-	# add them to the answer list
-	for element in set1:
-		if element not in set_intersection:
-			answer.append(element)
-	for element in set2:
-		if element not in set_intersection:
-			answer.append(element)
-	return set(answer)
+	# return the set union without the intersecting elements
+	return set_union.difference(set_intersection)
 
-
+	
 """
 	Gets the symmetric difference of a group of arrays.
 	Gets the symmetric difference of the first two elements, then uses
