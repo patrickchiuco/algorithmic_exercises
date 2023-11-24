@@ -36,7 +36,7 @@ def test_equals_is_not2():
 	assert equals_is_not2("isnotis") == False
 	assert equals_is_not2("mis3notpotbotis") == False
 	
-	# tests edge case where non of the two substrings appear
+	# tests edge t where non of the two substrings appear
 	assert equals_is_not2("xxxyyyzzzintint") == True
 	assert equals_is_not2("") == True
 

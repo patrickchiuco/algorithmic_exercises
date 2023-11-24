@@ -2,7 +2,7 @@ import re
 
 """
 	Returns true if the instances of the substring 'is'
-	is equal to the instances of the substring 'not'
+	is equal to the instances of the substring 'not'.
 """
 def equals_is_not(str_input):
 	# use regex to find all instances of the substrings
