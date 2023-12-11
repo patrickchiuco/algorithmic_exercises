@@ -1,9 +1,10 @@
-"""
+def update_inventory(arr1, arr2):
+	"""
 	Compares the given arr1 with arr2 updating the
 	item in arr1 if it exists and adds the item into
 	arr1 if it doesn't exist
-"""
-def update_inventory(arr1, arr2):
+	"""
+
 	# turn arr1 into a dictionary for faster lookup
 	current_inventory = {element[1]:element[0] for element in arr1}
 
