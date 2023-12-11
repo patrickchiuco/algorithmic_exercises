@@ -1,10 +1,11 @@
 import re
 
-"""
+def equals_is_not(str_input):
+	"""
 	Returns true if the instances of the substring 'is'
 	is equal to the instances of the substring 'not'.
-"""
-def equals_is_not(str_input):
+	"""
+
 	# use regex to find all instances of the substrings
 	all_is = re.findall(r'(is)', str_input)
 	all_not = re.findall(r'(not)', str_input)
@@ -13,11 +14,12 @@ def equals_is_not(str_input):
 	return len(all_is) == len(all_not)
 
 
-"""
+def count_instances(str_input, needle):
+	"""
 	Counts the instances of the substring 'is' and 'not'
 	iteratively.
-"""
-def count_instances(str_input, needle):
+	"""
+
 	try:
 		# mark the start of the substring to be considered
 		start_index = 0
