@@ -1,8 +1,9 @@
-"""
+def count_triple(str_input):
+	"""
 	Counts the number of instances where
 	a character appears thrice in a row.
-"""
-def count_triple(str_input):
+	"""
+
 	count = 0
 
 	# iterate through the string one
