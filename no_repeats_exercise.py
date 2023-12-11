@@ -1,10 +1,11 @@
 import re
 
-"""
+def swap(index1, index2, array):
+	"""
 	Swaps the element at index1 with the element
 	at index2 at the given array
-"""
-def swap(index1, index2, array):
+	"""
+
 	# buffer for switching array elements
 	buffer = array[index1]
 
@@ -12,11 +13,12 @@ def swap(index1, index2, array):
 	array[index1] = array[index2]
 	array[index2] = buffer
 
-"""
+def heaps_algorithm(k, array, answers):
+	"""
 	Python implementation of Heap's algorithm
 	https://en.wikipedia.org/wiki/Heap%27s_algorithm
-"""
-def heaps_algorithm(k, array, answers):
+	"""
+
 	if k == 1:
 		answers.append(''.join(array))
 	else:
@@ -29,15 +31,16 @@ def heaps_algorithm(k, array, answers):
 				swap(0, k-1, array)
 			heaps_algorithm(k-1, array, answers)
 
-"""
+def no_repeats(string_input):
+	"""
 	Main no_repeats function. Separates input into
 	a list of characters then generates all possible
 	permutations using heap's algorithm. Uses a regular
 	expression to determine whether there are repeats
 	in a given permutation or not. Returns the number
 	of permutations without any repeats.
-"""
-def no_repeats(string_input):
+	"""
+
 	# turn input into list of characters
 	list_input = list(string_input)
 	answers = []
