@@ -1,9 +1,10 @@
-"""
+def pairwise(array, k):
+	"""
 	Gets the indices of the elements that sum to the given
 	number k. Ensures the lowest index is used by using
 	.index()
-"""
-def pairwise(array, k):
+	"""
+
 	index_sum = 0
 
 	# iterate through all the elements to check for pairs
